@@ -1493,47 +1493,87 @@ const surgeryItemsDB = {
     'SUT001': { code: 'SUT001', name: 'Sutura 3-0', price: 12.50, categoria: 'Suturas' },
     'SUT002': { code: 'SUT002', name: 'Sutura 4-0', price: 15.00, categoria: 'Suturas' },
     'SUT003': { code: 'SUT003', name: 'Sutura 5-0', price: 18.00, categoria: 'Suturas' },
+    'SUT004': { code: 'SUT004', name: 'Sutura 2-0', price: 10.00, categoria: 'Suturas' },
+    'SUT005': { code: 'SUT005', name: 'Sutura Absorbible', price: 22.00, categoria: 'Suturas' },
 
     // Antibióticos
     'ANT001': { code: 'ANT001', name: 'Cefazolina 1g', price: 8.50, categoria: 'Antibióticos' },
     'ANT002': { code: 'ANT002', name: 'Gentamicina 80mg', price: 6.75, categoria: 'Antibióticos' },
-    'ANT003': { code: 'ANT003', name: 'Ciprofloxacino', price: 10.00, categoria: 'Antibióticos' },
+    'ANT003': { code: 'ANT003', name: 'Ciprofloxacino 500mg', price: 10.00, categoria: 'Antibióticos' },
+    'ANT004': { code: 'ANT004', name: 'Amoxicilina 500mg', price: 5.50, categoria: 'Antibióticos' },
+    'ANT005': { code: 'ANT005', name: 'Vancomicina 1g', price: 45.00, categoria: 'Antibióticos' },
 
-    // Gases
-    'GAS001': { code: 'GAS001', name: 'Gasa Estéril 10x10', price: 2.50, categoria: 'Gases' },
-    'GAS002': { code: 'GAS002', name: 'Compresa', price: 3.00, categoria: 'Gases' },
-    'GAS003': { code: 'GAS003', name: 'Apósito', price: 4.50, categoria: 'Gases' },
+    // Gases y Material de Curación
+    'GAS001': { code: 'GAS001', name: 'Gasa Estéril 10x10', price: 2.50, categoria: 'Material de Curación' },
+    'GAS002': { code: 'GAS002', name: 'Compresa Estéril', price: 3.00, categoria: 'Material de Curación' },
+    'GAS003': { code: 'GAS003', name: 'Apósito Adhesivo', price: 4.50, categoria: 'Material de Curación' },
+    'CUR001': { code: 'CUR001', name: 'Vendaje Elástico', price: 6.00, categoria: 'Material de Curación' },
+    'CUR002': { code: 'CUR002', name: 'Esparadrapo', price: 3.50, categoria: 'Material de Curación' },
+    'CUR003': { code: 'CUR003', name: 'Algodón Estéril', price: 4.00, categoria: 'Material de Curación' },
 
-    // Instrumentos
-    'INS001': { code: 'INS001', name: 'Bisturí #15', price: 5.50, categoria: 'Instrumentos' },
-    'INS002': { code: 'INS002', name: 'Pinza Kelly', price: 45.00, categoria: 'Instrumentos' },
-    'INS003': { code: 'INS003', name: 'Tijera Mayo', price: 35.00, categoria: 'Instrumentos' },
-    'INS004': { code: 'INS004', name: 'Porta agujas', price: 40.00, categoria: 'Instrumentos' },
+    // Instrumentos Quirúrgicos
+    'INS001': { code: 'INS001', name: 'Bisturí #15', price: 5.50, categoria: 'Insumos Quirúrgicos' },
+    'INS002': { code: 'INS002', name: 'Pinza Kelly', price: 45.00, categoria: 'Insumos Quirúrgicos' },
+    'INS003': { code: 'INS003', name: 'Tijera Mayo', price: 35.00, categoria: 'Insumos Quirúrgicos' },
+    'INS004': { code: 'INS004', name: 'Porta agujas', price: 40.00, categoria: 'Insumos Quirúrgicos' },
+    'INS005': { code: 'INS005', name: 'Pinza Hemostática', price: 38.00, categoria: 'Insumos Quirúrgicos' },
+    'INS006': { code: 'INS006', name: 'Retractor', price: 50.00, categoria: 'Insumos Quirúrgicos' },
+    'INS007': { code: 'INS007', name: 'Separador Farabeuf', price: 42.00, categoria: 'Insumos Quirúrgicos' },
+    'INS008': { code: 'INS008', name: 'Pinza Adson', price: 32.00, categoria: 'Insumos Quirúrgicos' },
+    'INS009': { code: 'INS009', name: 'Electrobisturí', price: 85.00, categoria: 'Insumos Quirúrgicos' },
+    'INS010': { code: 'INS010', name: 'Aspirador Quirúrgico', price: 65.00, categoria: 'Insumos Quirúrgicos' },
 
     // Medicamentos
     'MED001': { code: 'MED001', name: 'Morfina 10mg', price: 12.00, categoria: 'Medicamentos' },
     'MED002': { code: 'MED002', name: 'Propofol 200mg', price: 25.00, categoria: 'Medicamentos' },
-    'MED003': { code: 'MED003', name: 'Fentanilo', price: 18.50, categoria: 'Medicamentos' },
+    'MED003': { code: 'MED003', name: 'Fentanilo 100mcg', price: 18.50, categoria: 'Medicamentos' },
+    'MED004': { code: 'MED004', name: 'Midazolam 5mg', price: 15.00, categoria: 'Medicamentos' },
+    'MED005': { code: 'MED005', name: 'Ketamina 50mg', price: 20.00, categoria: 'Medicamentos' },
+    'MED006': { code: 'MED006', name: 'Tramadol 100mg', price: 8.00, categoria: 'Medicamentos' },
+    'MED007': { code: 'MED007', name: 'Diclofenaco 75mg', price: 4.50, categoria: 'Medicamentos' },
+    'MED008': { code: 'MED008', name: 'Ondansetrón 8mg', price: 12.50, categoria: 'Medicamentos' },
+    'MED009': { code: 'MED009', name: 'Dexametasona 8mg', price: 6.00, categoria: 'Medicamentos' },
+    'MED010': { code: 'MED010', name: 'Metoclopramida 10mg', price: 3.50, categoria: 'Medicamentos' },
+
+    // Anestésicos
+    'ANE001': { code: 'ANE001', name: 'Lidocaína 2% 20ml', price: 8.00, categoria: 'Anestésicos' },
+    'ANE002': { code: 'ANE002', name: 'Bupivacaína 0.5%', price: 12.00, categoria: 'Anestésicos' },
+    'ANE003': { code: 'ANE003', name: 'Ropivacaína 0.75%', price: 15.00, categoria: 'Anestésicos' },
+    'ANE004': { code: 'ANE004', name: 'Sevoflurano', price: 85.00, categoria: 'Anestésicos' },
+
+    // Sueros y Soluciones
+    'SOL001': { code: 'SOL001', name: 'Suero Fisiológico 1000ml', price: 5.00, categoria: 'Sueros y Soluciones' },
+    'SOL002': { code: 'SOL002', name: 'Lactato Ringer 1000ml', price: 6.50, categoria: 'Sueros y Soluciones' },
+    'SOL003': { code: 'SOL003', name: 'Dextrosa 5% 1000ml', price: 5.50, categoria: 'Sueros y Soluciones' },
+    'SOL004': { code: 'SOL004', name: 'Solución Hartmann 500ml', price: 4.50, categoria: 'Sueros y Soluciones' },
 
     // Prótesis
     'PRO001': { code: 'PRO001', name: 'Prótesis Cadera', price: 1200.00, categoria: 'Prótesis' },
     'PRO002': { code: 'PRO002', name: 'Placa Titanio', price: 850.00, categoria: 'Prótesis' },
+    'PRO003': { code: 'PRO003', name: 'Tornillos Ortopédicos (Set)', price: 120.00, categoria: 'Prótesis' },
+    'PRO004': { code: 'PRO004', name: 'Malla Hernia', price: 280.00, categoria: 'Prótesis' },
 
     // Catéteres
-    'CAT001': { code: 'CAT001', name: 'Catéter Central', price: 75.00, categoria: 'Catéteres' }
+    'CAT001': { code: 'CAT001', name: 'Catéter Central', price: 75.00, categoria: 'Catéteres' },
+    'CAT002': { code: 'CAT002', name: 'Catéter Venoso Periférico', price: 15.00, categoria: 'Catéteres' },
+    'CAT003': { code: 'CAT003', name: 'Catéter Urinario Foley', price: 12.00, categoria: 'Catéteres' },
+    'CAT004': { code: 'CAT004', name: 'Sonda Nasogástrica', price: 8.50, categoria: 'Catéteres' }
 };
 
 // Array para almacenar items agregados durante la cirugía
 let surgeryItems = [];
 
-// Estructura de items por categoría
+// Estructura de items por categoría (actualizada con todos los items)
 const itemsByCategory = {
     'Medicamentos': ['MED001', 'MED002', 'MED003', 'MED004', 'MED005', 'MED006', 'MED007', 'MED008', 'MED009', 'MED010'],
     'Anestésicos': ['ANE001', 'ANE002', 'ANE003', 'ANE004'],
-    'Antibióticos': ['ANT001', 'ANT002', 'ANT003', 'ANT004'],
+    'Antibióticos': ['ANT001', 'ANT002', 'ANT003', 'ANT004', 'ANT005'],
     'Sueros y Soluciones': ['SOL001', 'SOL002', 'SOL003', 'SOL004'],
     'Insumos Quirúrgicos': ['INS001', 'INS002', 'INS003', 'INS004', 'INS005', 'INS006', 'INS007', 'INS008', 'INS009', 'INS010'],
-    'Material de Curación': ['CUR001', 'CUR002', 'CUR003']
+    'Material de Curación': ['GAS001', 'GAS002', 'GAS003', 'CUR001', 'CUR002', 'CUR003'],
+    'Suturas': ['SUT001', 'SUT002', 'SUT003', 'SUT004', 'SUT005'],
+    'Prótesis': ['PRO001', 'PRO002', 'PRO003', 'PRO004'],
+    'Catéteres': ['CAT001', 'CAT002', 'CAT003', 'CAT004']
 };
 
 /*=============== ITEMS SEARCH & FILTER FUNCTIONS ===============*/
